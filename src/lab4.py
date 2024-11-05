@@ -8,28 +8,36 @@ class ArtificialChristmasTree:
         self.public_number = public_number
         self.public_string = public_string
 
-    def get_manufacturer(self):
+    @property
+    def manufacturer(self):
         return self.__manufacturer
 
-    def set_manufacturer(self, manufacturer):
+    @manufacturer.setter
+    def manufacturer(self, manufacturer):
         self.__manufacturer = manufacturer
 
-    def get_height(self):
+    @property
+    def height(self):
         return self.__height
 
-    def set_height(self, height):
+    @height.setter
+    def height(self, height):
         self.__height = height
 
-    def get_price(self):
+    @property
+    def price(self):
         return self.__price
 
-    def set_price(self, price):
+    @price.setter
+    def price(self, price):
         self.__price = price
 
-    def get_material(self):
+    @property
+    def material(self):
         return self.__material
 
-    def set_material(self, material):
+    @material.setter
+    def material(self, material):
         self.__material = material
 
     def __str__(self):
@@ -49,7 +57,7 @@ def main():
     tree_default = ArtificialChristmasTree()
 
     print(tree1)
-    print(type(tree2))
+    print(tree2)
     print(tree3)
     print(tree_default)
     print(repr(tree1))
